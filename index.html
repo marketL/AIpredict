@@ -54,6 +54,63 @@
         .detail-btn { flex: 1; background: #1677ff; color: #fff; border: none; padding: 10px 0; border-radius: 8px; font-size: 15px; font-weight: 500; cursor: pointer; }
         .detail-btn:active { opacity: 0.85; }
 
+        /* 养殖生产指标卡片 */
+        .prod-card { background: #ffffff; border-radius: 16px; margin-bottom: 12px; padding: 18px 16px; box-shadow: 0 1px 4px rgba(0,0,0,0.04); }
+        .prod-header { display: flex; align-items: center; margin-bottom: 16px; }
+        .prod-icon { width: 38px; height: 38px; border-radius: 9px; background: #1677ff; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+        .prod-icon svg { width: 24px; height: 24px; }
+        .prod-title { flex: 1; font-size: 20px; font-weight: 700; color: #1a1a1a; margin-left: 12px; white-space: nowrap; }
+        .prod-link { font-size: 15px; color: #1677ff; white-space: nowrap; cursor: pointer; }
+        .prod-link:active { opacity: 0.7; }
+        .prod-box { background: #f6f7f9; border-radius: 14px; padding: 22px 18px; }
+        .prod-row { display: flex; align-items: flex-start; font-size: 17px; line-height: 1.5; margin-bottom: 22px; }
+        .prod-row:last-child { margin-bottom: 0; }
+        .prod-label { color: #999; flex-shrink: 0; }
+        .prod-value { color: #2b2b2b; flex: 1; word-break: break-all; }
+        .prod-row-name { justify-content: space-between; align-items: center; }
+        .prod-row-name .prod-value { text-align: right; }
+        .prod-row-normal { justify-content: space-between; align-items: center; }
+        .prod-row-normal .prod-value { flex: none; text-align: right; }
+        .prod-level { color: #00b42a; font-weight: 600; }
+
+        /* 养殖生产指标详情页 */
+        .detail-navbar { position: sticky; top: 0; z-index: 100; height: 48px; background: linear-gradient(135deg, #3b8bff, #2b76f5); display: flex; align-items: center; justify-content: center; }
+        .detail-navbar .back-btn { position: absolute; left: 14px; top: 0; height: 48px; width: 32px; display: flex; align-items: center; font-size: 22px; color: #fff; }
+        .detail-navbar-title { font-size: 18px; font-weight: 700; color: #fff; }
+
+        .feedback-vertical { position: fixed; top: 42%; left: calc(50% + 172px); background: #2b76f5; color: #fff; writing-mode: vertical-rl; letter-spacing: 2px; font-size: 13px; padding: 12px 7px; border-radius: 8px 0 0 8px; z-index: 90; cursor: pointer; box-shadow: 0 2px 8px rgba(43,118,245,0.35); }
+        .feedback-vertical:active { opacity: 0.85; }
+
+        .detail-top { background: linear-gradient(180deg, #4a94ff 0%, #2b76f5 100%); padding: 14px 14px 52px; }
+        .customer-card { background: #ffffff; border-radius: 14px; padding: 18px 18px 0; box-shadow: 0 4px 14px rgba(22,80,180,0.12); }
+        .customer-row { display: flex; align-items: center; }
+        .customer-avatar { width: 40px; height: 40px; border-radius: 50%; background: #e6efff; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+        .customer-avatar svg { width: 24px; height: 24px; }
+        .customer-name { flex: 1; margin-left: 10px; font-size: 20px; font-weight: 700; color: #1677ff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+        .customer-link { font-size: 16px; color: #1677ff; cursor: pointer; flex-shrink: 0; }
+        .customer-link:active { opacity: 0.7; }
+        .customer-code { font-size: 16px; color: #2b2b2b; margin-top: 14px; }
+        .customer-divider { height: 1px; background: #f0f0f0; margin: 14px 0; }
+        .customer-contact { font-size: 17px; color: #2b2b2b; padding-bottom: 18px; }
+
+        .detail-body { padding: 0 12px 20px; margin-top: -40px; position: relative; }
+        .suggest-card { background: #ffffff; border-radius: 14px; padding: 18px 16px 0; box-shadow: 0 2px 10px rgba(0,0,0,0.05); overflow: hidden; }
+        .suggest-head { display: flex; align-items: center; justify-content: space-between; }
+        .suggest-type { font-size: 19px; font-weight: 700; color: #1a1a1a; }
+        .suggest-level { font-size: 21px; font-weight: 700; color: #00b42a; }
+        .suggest-time { font-size: 14px; color: #999; margin-top: 10px; }
+        .suggest-intro { margin-top: 14px; background: #eef4ff; border-radius: 10px; padding: 14px; font-size: 16px; line-height: 1.7; color: #1a1a1a; }
+        .suggest-intro .hl { color: #1677ff; font-weight: 600; }
+
+        .metric-table-wrap { margin: 14px -16px 0; }
+        .metric-table { width: 100%; border-collapse: collapse; table-layout: fixed; }
+        .metric-table th { background: #fafbfc; color: #8c8c8c; font-size: 14px; font-weight: 400; padding: 12px 6px; text-align: center; border-bottom: 1px solid #f0f0f0; }
+        .metric-table td { border: 1px solid #ececec; font-size: 14px; color: #2b2b2b; padding: 11px 8px; vertical-align: middle; line-height: 1.55; word-break: break-all; }
+        .metric-cat { background: #f7f8fa; text-align: center; font-weight: 600; font-size: 15px; }
+        .metric-name { background: #ffffff; }
+        .metric-good { background: #eef8e8; }
+        .metric-bad { background: #fdeeee; }
+
         .modal-overlay { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.5); z-index: 200; display: flex; align-items: center; justify-content: center; opacity: 0; visibility: hidden; transition: all 0.3s; }
         .modal-overlay.show { opacity: 1; visibility: visible; }
         .modal-content { background: #ffffff; width: 85%; max-width: 300px; border-radius: 12px; padding: 24px; text-align: center; }
@@ -64,23 +121,74 @@
 </head>
 <body>
     <div class="app-container">
+      <div id="mainView">
         <div class="navbar">
             <div class="back-btn">＜</div>
             <div class="title">AI预警</div>
         </div>
 
-        <div class="warning-bar">
+        <div class="warning-bar" id="warningBar">
             <span class="warning-icon" onclick="showModal()" style="cursor:pointer">⚠️</span>
             <div class="warning-text">2个客户该买未买，1个客户买量下降，请及时关注！</div>
         </div>
 
         <div class="tabs">
-            <div class="tab active" onclick="switchTab('all', this)">全部(3)</div>
-            <div class="tab" onclick="switchTab('buy-not', this)">该买未买(2)</div>
+            <div class="tab active" onclick="switchTab('buy-not', this)">该买未买(2)</div>
             <div class="tab" onclick="switchTab('buy-down', this)">买量下降(1)</div>
+            <div class="tab" onclick="switchTab('production', this)">养殖生产(1)</div>
         </div>
 
         <div class="card-list" id="cardList"></div>
+      </div>
+
+      <div id="detailView" style="display:none;">
+        <div class="detail-navbar">
+            <div class="back-btn" onclick="backToList()">＜</div>
+            <div class="detail-navbar-title">养殖生产指标</div>
+        </div>
+        <div class="feedback-vertical" onclick="alert('意见反馈')">意见反馈</div>
+        <div class="detail-top">
+            <div class="customer-card">
+                <div class="customer-row">
+                    <div class="customer-avatar">
+                        <svg viewBox="0 0 24 24" fill="#1677ff" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="8" r="4.2"/>
+                            <path d="M3.8 20.2c0-4.3 3.7-6.8 8.2-6.8s8.2 2.5 8.2 6.8z"/>
+                        </svg>
+                    </div>
+                    <div class="customer-name" id="dCustomerName"></div>
+                    <div class="customer-link" onclick="alert('跳转至客户详情')">详情</div>
+                </div>
+                <div class="customer-code" id="dCustomerCode"></div>
+                <div class="customer-divider"></div>
+                <div class="customer-contact" id="dCustomerContact"></div>
+            </div>
+        </div>
+        <div class="detail-body">
+            <div class="suggest-card">
+                <div class="suggest-head">
+                    <div class="suggest-type" id="dSuggestType"></div>
+                    <div class="suggest-level" id="dLevel"></div>
+                </div>
+                <div class="suggest-time" id="dGenerateTime"></div>
+                <div class="suggest-intro" id="dIntro"></div>
+                <div class="metric-table-wrap">
+                    <table class="metric-table">
+                        <colgroup>
+                            <col style="width:56px">
+                            <col style="width:96px">
+                            <col style="width:80px">
+                            <col>
+                        </colgroup>
+                        <thead>
+                            <tr><th colspan="2">指标名称</th><th>生产水平</th><th>工作建议</th></tr>
+                        </thead>
+                        <tbody id="metricTbody"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+      </div>
     </div>
 
     <div class="modal-overlay" id="modal" onclick="closeModal()">
@@ -151,7 +259,54 @@
             }
         ];
 
-        let currentFilter = 'all';
+        const productionData = [
+            {
+                id: 1,
+                farmName: '养殖户张大爷',
+                period: '2024年49周',
+                level: '优秀',
+                generateTime: '2024/12/10 12:12:00'
+            }
+        ];
+
+        const productionDetail = {
+            customerName: '养殖户张大爷',
+            customerCode: '10193147',
+            contact: '养殖户张大爷（13123456789）',
+            suggestType: '养殖生产建议',
+            level: '优秀',
+            period: '2024年49周',
+            generateTime: '2024/12/10 12:12:00',
+            groups: [
+                {
+                    category: '生产效率',
+                    rows: [
+                        { name: '分娩率', levelText: '优>=90', good: true, advice: '' },
+                        { name: '窝产健仔数（头）', levelText: '优>=11.5', good: true, advice: '' },
+                        { name: '分娩损失率', levelText: '优<=3', good: true, advice: '' },
+                        { name: '保育损失率（头）', levelText: '优<=3', good: true, advice: '' }
+                    ]
+                },
+                {
+                    category: '配怀舍',
+                    rows: [
+                        { name: '7天断配率', levelText: '差>5', good: false, advice: '1）母猪配前优饲、诱情刺激、准,2）注意母猪疾病' },
+                        { name: '母猪空怀/流产/返情率', levelText: '差<10', good: false, advice: '1）运用人工授精技术，确保在引入具有优良遗传特性的种猪，能力,3）加强对母猪的健康监控' }
+                    ]
+                },
+                {
+                    category: '分娩舍',
+                    rows: [
+                        { name: '出生均重（kg）', levelText: '差<1.2', good: false, advice: '1）调整母猪饲料配方及饲喂量疫' },
+                        { name: '窝均死/木/畸（头）', levelText: '优<=0.5', good: true, advice: '' },
+                        { name: '窝均断奶数', levelText: '优>=10.5', good: true, advice: '' },
+                        { name: '窝均断奶重（kg）', levelText: '优>=6.5', good: true, advice: '' }
+                    ]
+                }
+            ]
+        };
+
+        let currentFilter = 'buy-not';
 
         function renderCards(filter) {
             currentFilter = filter;
@@ -159,7 +314,7 @@
             let html = '';
 
             data.forEach(item => {
-                if (filter === 'all' || item.type === filter) {
+                if (item.type === filter) {
                     html += `
                         <div class="card expanded" data-id="${item.id}">
                             <div class="card-header" onclick="toggleCard(this)">
@@ -205,6 +360,49 @@
             cardList.innerHTML = html;
         }
 
+        function renderProduction() {
+            const cardList = document.getElementById('cardList');
+            let html = '';
+
+            productionData.forEach(item => {
+                html += `
+                    <div class="prod-card" data-id="${item.id}" onclick="goProductionDetail(${item.id})" style="cursor:pointer">
+                        <div class="prod-header">
+                            <div class="prod-icon">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="2.5" y="3.5" width="19" height="17" rx="2.5" stroke="#fff" stroke-width="1.8"/>
+                                    <path d="M6.5 15.5L10.5 11L13.5 13.5L18 8" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M14.5 8H18V11.5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="prod-title">养殖生产指标</div>
+                            <div class="prod-link">客户详情→</div>
+                        </div>
+                        <div class="prod-box">
+                            <div class="prod-row prod-row-name">
+                                <span class="prod-label">养殖场名称：</span>
+                                <span class="prod-value">${item.farmName}</span>
+                            </div>
+                            <div class="prod-row prod-row-normal">
+                                <span class="prod-label">周期：</span>
+                                <span class="prod-value">${item.period}</span>
+                            </div>
+                            <div class="prod-row prod-row-normal">
+                                <span class="prod-label">指标水平：</span>
+                                <span class="prod-value prod-level">${item.level}</span>
+                            </div>
+                            <div class="prod-row prod-row-normal">
+                                <span class="prod-label">生成时间：</span>
+                                <span class="prod-value">${item.generateTime}</span>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            });
+
+            cardList.innerHTML = html;
+        }
+
         function toggleCard(headerEl) {
             const card = headerEl.closest('.card');
             card.classList.toggle('expanded');
@@ -213,7 +411,12 @@
         function switchTab(tab, el) {
             document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
             el.classList.add('active');
-            renderCards(tab);
+            document.getElementById('warningBar').style.display = (tab === 'production') ? 'none' : 'flex';
+            if (tab === 'production') {
+                renderProduction();
+            } else {
+                renderCards(tab);
+            }
         }
 
         function showModal() {
@@ -246,7 +449,47 @@
             alert('跳转至客户详情：' + item.name);
         }
 
-        renderCards('all');
+        function renderProductionDetail() {
+            const d = productionDetail;
+            document.getElementById('dCustomerName').textContent = d.customerName;
+            document.getElementById('dCustomerCode').textContent = '客户代码：' + d.customerCode;
+            document.getElementById('dCustomerContact').textContent = '联系人1：' + d.contact;
+            document.getElementById('dSuggestType').textContent = '建议类型：' + d.suggestType;
+            document.getElementById('dLevel').textContent = d.level;
+            document.getElementById('dGenerateTime').textContent = '生成时间：' + d.generateTime;
+            document.getElementById('dIntro').innerHTML = `<span class="hl">${d.customerName}</span>${d.period}生产水平${d.level}，指标明细如下：`;
+
+            let rowsHtml = '';
+            d.groups.forEach(g => {
+                g.rows.forEach((r, i) => {
+                    rowsHtml += '<tr>';
+                    if (i === 0) {
+                        rowsHtml += `<td class="metric-cat" rowspan="${g.rows.length}">${g.category}</td>`;
+                    }
+                    const cls = r.good ? 'metric-good' : 'metric-bad';
+                    rowsHtml += `<td class="metric-name">${r.name}</td>`;
+                    rowsHtml += `<td class="${cls}">${r.levelText}</td>`;
+                    rowsHtml += `<td class="${cls}">${r.advice}</td>`;
+                    rowsHtml += '</tr>';
+                });
+            });
+            document.getElementById('metricTbody').innerHTML = rowsHtml;
+        }
+
+        function goProductionDetail(id) {
+            renderProductionDetail(id);
+            document.getElementById('mainView').style.display = 'none';
+            document.getElementById('detailView').style.display = 'block';
+            window.scrollTo(0, 0);
+        }
+
+        function backToList() {
+            document.getElementById('detailView').style.display = 'none';
+            document.getElementById('mainView').style.display = 'block';
+            window.scrollTo(0, 0);
+        }
+
+        renderCards('buy-not');
     </script>
 </body>
 </html>
